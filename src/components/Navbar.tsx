@@ -5,16 +5,16 @@ import Dropdown from './Dropdown';
 import { RxCross2, RxHamburgerMenu } from 'react-icons/rx';
 
 export default function Navbar() {
+      
+  const howItWorksRef = useRef<HTMLLIElement>(null);
+  const servicesRef = useRef<HTMLLIElement>(null);
+  const apis = useRef<HTMLLIElement>(null);
+  const partners = useRef<HTMLLIElement>(null);
   const [isHowItWorksOpen, setIsHowItWorksOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [api, setApi] = useState(false);
   const [partner, setPartner] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-  const howItWorksRef = useRef(null);
-  const servicesRef = useRef(null);
-  const apis = useRef(null);
-  const partners = useRef(null);
+  const [isMobileMenuOpen,setIsMobileMenuOpen] = useState(false)
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
