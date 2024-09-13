@@ -27,7 +27,7 @@ const FeaturedCard: React.FC<FeaturedCardProps> = ({
         {items.map((item) => (
           <div
             key={item.id}
-            className="max-w-sm p-6 bg-white cursor-pointer border border-gray-200 rounded-lg shadow dark:bg-white/60 group hover:scale-[1.006] transition ease-in-out duration-200 hover:shadow-lg dark:border-gray-100"
+            className="max-w-[370px] p-6 bg-white cursor-pointer border border-gray-200 rounded-lg shadow dark:bg-white/60 group hover:scale-[1.006] transition ease-in-out duration-200 hover:shadow-lg dark:border-gray-100"
           >
             <LuFileAxis3D size={32} />
             <div className="flex justify-between gap-2 items-center">
@@ -42,7 +42,7 @@ const FeaturedCard: React.FC<FeaturedCardProps> = ({
             <div className="flex justify-between items-center">
             <Link
               href={`/products/${item.id}`}
-              className="inline-flex group-hover:scale-[1.006] font-medium items-center text-[#97144d] group-hover:underline"
+              className="inline-flex underline-offset-2 group-hover:scale-[1.006] font-medium items-center text-[#97144d] group-hover:underline"
             >
               View more
               <MdOutlineArrowOutward className="group-hover:translate-x-[3px] group-hover:-translate-y-[3px] transition ease-in-out duration-200" />

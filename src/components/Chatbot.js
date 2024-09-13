@@ -1,43 +1,57 @@
-import { useState } from 'react';
-import { FaUserCircle } from 'react-icons/fa';
+import { useState } from "react";
+import { FaCaretDown, FaUserCircle } from "react-icons/fa";
 
 const Chatbot = () => {
   const [isOpen, setIsOpen] = useState(false); // Chat window visibility
   const [messages, setMessages] = useState([]); // Store chat messages
-  const [inputMessage, setInputMessage] = useState(''); // Input box value
+  const [inputMessage, setInputMessage] = useState(""); // Input box value
 
   // Function to handle sending message
   const sendMessage = () => {
-    if (inputMessage.trim() !== '') {
-      setMessages([...messages, { sender: 'user', text: inputMessage }]); // Add user message to the chat
-      setInputMessage(''); // Clear the input box
+    if (inputMessage.trim() !== "") {
+      setMessages([...messages, { sender: "user", text: inputMessage }]); // Add user message to the chat
+      setInputMessage("");
 
-      // Simulate a bot response after a delay
       setTimeout(() => {
         setMessages((prevMessages) => [
           ...prevMessages,
-          { sender: 'bot', text: 'I am a chatbot. How can I help you?' },
+          { sender: "bot", text: "I am a chatbot. How can I help you?" },
         ]);
-      }, 1000); // 1 second delay for bot response
+      }, 1000);
     }
   };
 
-  // Function to handle form submission (on "Enter" key press)
   const handleKeyDown = (e) => {
-    if (e.key === 'Enter') {
+    if (e.key === "Enter") {
       sendMessage();
     }
   };
 
   return (
     <div className="fixed bottom-5 right-5">
-      {/* Chat icon */}
-      <button
-        className="text-4xl text-blue-500 hover:text-blue-600 focus:outline-none"
-        onClick={() => setIsOpen(!isOpen)}
-      >
-        <FaUserCircle color='#97144d'/>
-      </button>
+      <div className="relative group">
+        {/* Chat icon with Tooltip */}
+        <button
+          className="text-4xl text-blue-500 hover:text-blue-600 focus:outline-none relative"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          <FaUserCircle color="#97144d" />
+        </button>
+
+        {/* Tooltip or Label */}
+        <span
+          className={`${
+            isOpen
+              ? "hidden"
+              : "absolute bottom-full right-0 mb-2 w-20 animate-pulse text-center px-3 py-1 bg-[#97144d] text-white text-sm rounded-md opacity-100 transition-opacity duration-300"
+          }`}
+        >
+          Ask Me
+          <div className="absolute -mt-[5px] right-[1.5px] text-[#97144d] ">
+            <FaCaretDown size={20} />
+          </div>
+        </span>
+      </div>
 
       {/* Chat window */}
       {isOpen && (
@@ -58,14 +72,14 @@ const Chatbot = () => {
               <div
                 key={index}
                 className={`flex ${
-                  message.sender === 'user' ? 'justify-end' : 'justify-start'
+                  message.sender === "user" ? "justify-end" : "justify-start"
                 } mb-2`}
               >
                 <div
                   className={`rounded-lg px-4 py-2 text-white ${
-                    message.sender === 'user'
-                      ? 'bg-[#97144d]'
-                      : 'bg-gray-300 text-black'
+                    message.sender === "user"
+                      ? "bg-[#97144d]"
+                      : "bg-gray-300 text-black"
                   }`}
                 >
                   {message.text}

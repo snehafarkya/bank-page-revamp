@@ -26,15 +26,18 @@ const Dropdown: React.FC<DropdownProps> = ({ title, items, initiallyOpen = false
         } rounded-lg shadow-md hover:bg-gray-200 transition-all`}
         onClick={toggleDropdown}
       >
-        <span className={`text-base  ${isNested ? 'text-sm font-normal' : 'text-lg font-semibold'}`}>
+        <span className={`text-base  ${isNested ? 'text-sm font-normal' : 'text-base font-medium'}`}>
           {title}
         </span>
         {/* Toggle between Chevron for main dropdown and Plus/Minus for nested dropdown */}
+        <div className={`transition-transform duration-1000 ease-in-out ${isOpen ? 'rotate-[360deg]' : 'rotate-0'}`}>
+
         {isOpen ? (
           isNested ? <FaMinus size={12} /> : <FaChevronUp size={14} />
         ) : (
           isNested ? <FaPlus size={12} /> : <FaChevronDown size={14} />
         )}
+        </div>
       </button>
 
       {isOpen && (
