@@ -27,10 +27,10 @@ const FeaturedCard: React.FC<FeaturedCardProps> = ({
         {items.map((item) => (
           <div
             key={item.id}
-            className="max-w-[370px] p-6 bg-white cursor-pointer border border-gray-200 rounded-lg shadow dark:bg-white/60 group hover:scale-[1.006] transition ease-in-out duration-200 hover:shadow-lg dark:border-gray-100"
+            className="max-w-[360px] p-6 bg-white cursor-pointer border border-gray-200 rounded-lg shadow dark:bg-white/60 group hover:scale-[1.006] transition ease-in-out duration-200 hover:shadow-lg dark:border-gray-100"
           >
-            <LuFileAxis3D size={32} />
-            <div className="flex justify-between gap-2 items-center">
+            <LuFileAxis3D size={32}  />
+            <div className="flex justify-between mt-1 md:mt-0 gap-2 items-center">
               <h5 className=" text-xl font-semibold tracking-tight text-gray-900 dark:text-black">
                 {item.title}
               </h5>

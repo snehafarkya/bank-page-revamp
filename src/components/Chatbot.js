@@ -43,7 +43,7 @@ const Chatbot = () => {
           className={`${
             isOpen
               ? "hidden"
-              : "absolute bottom-full right-0 mb-2 w-20 animate-pulse text-center px-3 py-1 bg-[#97144d] text-white text-sm rounded-md opacity-100 transition-opacity duration-300"
+              : "absolute bottom-full right-0 mb-2 z-50 w-20 animate-pulse text-center px-3 py-1 bg-[#97144d] text-white text-sm rounded-md opacity-100 transition-opacity duration-300"
           }`}
         >
           Ask Me

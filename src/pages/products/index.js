@@ -5,6 +5,7 @@ import Aside from '../../components/Aside';
 import fake from "../../components/FakeData.json";
 import Navbar from '@/components/Navbar';
 import Chatbot from '@/components/Chatbot'
+import Footer from '@/components/Footer';
 
 export default function Index() {
   const ITEMS_PER_PAGE = 6;
@@ -50,8 +51,11 @@ export default function Index() {
           totalPages={totalPages}
           handlePageChange={handlePageChange}
         />
+
         <Chatbot />
       </div>
+      <Footer/>
+
     </>
   );
 }
