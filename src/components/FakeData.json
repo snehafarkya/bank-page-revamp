@@ -1,0 +1,144 @@
+[{
+  "id":1,
+  "title":"Corporate Payments",
+  "desc":"This product contains APIs that allow corporate to transfer money to their own account, third party accounts and",
+  "rating":"4.1",
+  "votes":"9",
+  "defaultRating":4
+},
+{
+  "id":2,
+  "title":"Corporate Collections",
+  "desc":"This product contains APIs that allow corporate to transfer money to their own account, third party accounts and",
+  "rating":"3.7",
+  "votes":"10",
+  "defaultRating":3
+
+},
+{
+  "id":3,
+  "title":"Corporate Payments",
+  "desc":"This product contains APIs that allow corporate to transfer money to their own account, third party accounts and",
+  "rating":"4.5",
+  "votes":"70",
+  "defaultRating":4
+
+},
+{
+  "id":4,
+  "title":"Corporate Payments",
+  "desc":"This product contains APIs that allow corporate to transfer money to their own account, third party accounts and",
+  "rating":"4.2",
+  "votes":"10",
+  "defaultRating":4
+
+},
+{
+  "id":5,
+  "title":"UPIs",
+  "desc":"This product contains APIs that allow corporate to transfer money to their own account, third party accounts and",
+  "rating":"3.6",
+  "votes":"12",
+  "defaultRating":4
+
+},
+{
+  "id":6,
+  "title":"Corporate Payments",
+  "desc":"This product contains APIs that allow corporate to transfer money to their own account, third party accounts and",
+  "rating":"3.1",
+  "votes":"7",
+  "defaultRating":3
+
+},
+{
+  "id":7,
+  "title":"Bill Payments",
+  "desc":"This product contains APIs that allow corporate to transfer money to their own account, third party accounts and",
+  "rating":"3.1",
+  "votes":"7",
+  "defaultRating":3
+
+},
+{
+  "id":8,
+  "title":"Corporate Payments",
+  "desc":"This product contains APIs that allow corporate to transfer money to their own account, third party accounts and",
+  "rating":"3.1",
+  "votes":"7",
+  "defaultRating":3
+
+},
+{
+  "id":9,
+  "title":"Loans ",
+  "desc":"This product contains APIs that allow corporate to transfer money to their own account, third party accounts and",
+  "rating":"3.1",
+  "votes":"7",
+  "defaultRating":3
+
+},
+{
+  "id":10,
+  "title":"Credit Card",
+  "desc":"This product contains APIs that allow corporate to transfer money to their own account, third party accounts and",
+  "rating":"3.1",
+  "votes":"7",
+  "defaultRating":3
+
+},
+{
+  "id":11,
+  "title":"Deposits ",
+  "desc":"This product contains APIs that allow corporate to transfer money to their own account, third party accounts and",
+  "rating":"3.1",
+  "votes":"7",
+  "defaultRating":3
+
+},
+{
+  "id":12,
+  "title":"Corporate Payments",
+  "desc":"This product contains APIs that allow corporate to transfer money to their own account, third party accounts and",
+  "rating":"3.1",
+  "votes":"7",
+  "defaultRating":3
+
+},
+{
+  "id":13,
+  "title":"Buy Now Pay Later",
+  "desc":"This product contains APIs that allow corporate to transfer money to their own account, third party accounts and",
+  "rating":"3.1",
+  "votes":"7",
+  "defaultRating":3
+
+},
+{
+  "id":14,
+  "title":"Corporate Payments",
+  "desc":"This product contains APIs that allow corporate to transfer money to their own account, third party accounts and",
+  "rating":"3.1",
+  "votes":"7",
+  "defaultRating":3
+
+},
+{
+  "id":15,
+  "title":"Debit Card Opt Verification",
+  "desc":"This product contains APIs that allow corporate to transfer money to their own account, third party accounts and",
+  "rating":"3.1",
+  "votes":"7",
+  "defaultRating":3
+
+},
+{
+  "id":16,
+  "title":"Corporate Payments",
+  "desc":"This product contains APIs that allow corporate to transfer money to their own account, third party accounts and",
+  "rating":"3.1",
+  "votes":"7",
+  "defaultRating":3
+
+}
+]
