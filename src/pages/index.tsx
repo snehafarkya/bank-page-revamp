@@ -1,10 +1,9 @@
 
-import Hero from "@/components/Hero";
-
+import Index from '../pages/products/index'
 export default function Home() {
   return (
     <div>
-      <Hero/>
+      <Index/>
       </div>
   );
 }

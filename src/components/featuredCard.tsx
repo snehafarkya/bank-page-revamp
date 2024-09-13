@@ -23,7 +23,7 @@ const FeaturedCard: React.FC<FeaturedCardProps> = ({
   return (
     <div className="flex w-fit flex-col gap-4">
       {/* Card Section */}
-      <div className="grid md:grid-cols-2 grid-cols-1 h-fit flex-wrap gap-4">
+      <div className="grid md:grid-cols-2 grid-cols-1  h-fit flex-wrap gap-4">
         {items.map((item) => (
           <div
             key={item.id}

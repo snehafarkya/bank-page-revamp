@@ -31,12 +31,6 @@ export default function Index() {
     }
   };
 
-  // Debugging logs
-  console.log('Current Page:', currentPage);
-  console.log('Start Index:', startIndex);
-  console.log('End Index:', endIndex);
-  console.log('Paginated Items:', paginatedItems);
-
   return (
     <>
       <Navbar />
@@ -45,7 +39,7 @@ export default function Index() {
         <p className='text-center px-4'>Explore a wide range of APIs and choose the best ones for your use case</p>
       </div>
       <div className='flex flex-col md:flex-row my-10 mx-auto gap-10 md:w-[80%] w-max justify-center'>
-        <div className="rounded-xl w-fit mx-auto md:mx-0 flex flex-col">
+        <div className="rounded-xl w-fit md:flex mx-auto md:mx-0 hidden flex-col">
           <Aside />
         </div>
 

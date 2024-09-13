@@ -57,7 +57,7 @@ export default function Navbar() {
             aria-expanded={isMobileMenuOpen ? 'true' : 'false'}
           >
             <span className="sr-only">Open main menu</span>
-            {isMobileMenuOpen ? <RxCross2/> : <RxHamburgerMenu/>}
+            {isMobileMenuOpen ? <RxCross2 size={20}/> : <RxHamburgerMenu size={20}/>}
           </button>
 
           {/* SearchBar - visible only on larger screens */}

@@ -4,6 +4,7 @@ import FeaturedCard from './featuredCard';
 import Aside from './Aside';
 import fake from "./FakeData.json";
 import Navbar from '@/components/Navbar';
+import Chatbot from './Chatbot';
 
 export default function Index() {
   const ITEMS_PER_PAGE = 6;
@@ -30,11 +31,6 @@ export default function Index() {
     }
   };
 
-  // Debugging logs
-  console.log('Current Page:', currentPage);
-  console.log('Start Index:', startIndex);
-  console.log('End Index:', endIndex);
-  console.log('Paginated Items:', paginatedItems);
 
   return (
     <>
@@ -43,8 +39,8 @@ export default function Index() {
         <h1 className="text-3xl font-bold text-[#97144d]">Featured Products</h1>
         <p className='text-center px-4'>Explore a wide range of APIs and choose the best ones for your use case</p>
       </div>
-      <div className='flex flex-col md:flex-row my-10 mx-auto gap-10 md:w-[80%] justify-center'>
-        <div className="rounded-xl flex w-fit mx-auto flex-col">
+      <div className='flex flex-col md:flex-row my-10 mx-auto gap-10 md:w-[80%] w-max justify-center'>
+        <div className="rounded-xl w-fit mx-auto md:mx-0 flex flex-col">
           <Aside />
         </div>
 
@@ -55,6 +51,7 @@ export default function Index() {
           totalPages={totalPages}
           handlePageChange={handlePageChange}
         />
+        <Chatbot />
       </div>
     </>
   );
