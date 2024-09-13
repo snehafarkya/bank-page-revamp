@@ -23,7 +23,7 @@ const Dropdown: React.FC<DropdownProps> = ({ title, items, initiallyOpen = false
       <button
         className={`flex justify-between items-center w-full py-3 px-4 text-left ${
           isNested ? 'bg-transparent shadow-none  text-gray-700' : 'bg-gray-100 text-gray-800'
-        } rounded-lg shadow-md hover:bg-gray-200 transition-all`}
+        } rounded-lg shadow hover:bg-gray-200 transition-all`}
         onClick={toggleDropdown}
       >
         <span className={`text-base  ${isNested ? 'text-sm font-normal' : 'text-base font-medium'}`}>
